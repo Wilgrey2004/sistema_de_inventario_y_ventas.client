@@ -1,0 +1,17 @@
+<h2 class="">Prueba de comunicacion con el web api</h2>
+
+<div class="flex wrap-normal items-center justify-center mt-5">
+  @for (clima of climas; track $index) {
+  <div class="p-4 hover:bg-blue-100 hover:rounded-2xl flex flex-col gap-2">
+    <div class="border-b border-blue-900">
+      Fecha: <span class="text-blue-600 font-bold">{{ clima.date }}</span>
+    </div>
+    <div class="border-b border-blue-900">
+      Temperatuira (C) <span class="text-blue-700 font-bold">{{ clima.TemperatureC }}</span>
+    </div>
+    <div class="border-b border-blue-900">
+      Resumen <span class="text-blue-800 font-bold">{{ clima.summary }}</span>
+    </div>
+  </div>
+  }
+</div>
